@@ -25,6 +25,11 @@ class PugRenderer extends ViewRenderer
     public $cacheDuration = 0;
 
     /**
+     * @var bool
+     */
+    public $debug = false;
+
+    /**
      * @var array Pug options.
      */
     public $options;
@@ -49,7 +54,7 @@ class PugRenderer extends ViewRenderer
         $this->options = ArrayHelper::merge([
             'extension' => '.pug',
             'expressionLanguage' => 'php',
-            'prettyprint' => true,
+            'prettyprint' => $this->debug,
         ], (array)$this->options);
     }
 
