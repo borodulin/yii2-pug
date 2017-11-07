@@ -1,0 +1,32 @@
+{
+  "name": "conquer/pug",
+  "description": "Pug renderer for the Yii2 framework",
+  "keywords": ["yii2", "jade", "pug", "renderer"],
+  "homepage": "https://github.com/borodulin/yii2-pug",
+  "type": "yii2-extension",
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/borodulin/yii2-pug/issues",
+    "source": "https://github.com/borodulin/yii2-pug"
+  },
+  "authors": [
+    {
+      "name": "Andrey Borodulin",
+      "email": "borodulin@gmail.com"
+    }
+  ],
+  "require": {
+    "yiisoft/yii2": ">=2.0.8",
+    "pug-php/pug": ">=2.7.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "conquer\\pug\\": ""
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.0-dev"
+    }
+  }
+}
