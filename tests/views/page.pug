@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  h1= $title
+  p!= $raw
+  p= $this->context ? 'context' : 'view ' . get_class($this)
+  include part
